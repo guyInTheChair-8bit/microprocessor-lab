@@ -1,0 +1,16 @@
+        AREA Program, CODE, READONLY
+        ENTRY
+        LDR R0, NUM1LOW
+        LDR R1, NUM1HIGH
+        LDR R2, NUM2LOW
+        LDR R3, NUM2HIGH
+        ADDS R4, R0, R2
+        ADC R5, R1, R3
+stop
+        B stop
+        AREA Data, DATA, READONLY
+NUM1HIGH DCD &12345678
+NUM1LOW  DCD &87654321
+NUM2HIGH DCD &53287651
+NUM2LOW  DCD &65724351
+        END

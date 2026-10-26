@@ -1,0 +1,41 @@
+.inlcude "m8def.inc"
+
+.CSEG
+
+LDI R16, 0x00
+OUT DDRD, R16
+LDI R16, 0xFF
+OUT PORTD, R16
+
+LDI R16, 0xFF
+OUT DDRC, R16
+LDI R16, 0x00
+OUT PORTC, R16
+
+main_loop:
+
+IN R16, PIND
+COM R16
+
+MOV R17, R16
+MOV R18, R16
+
+ANDI R17, 0x0F
+SWAP R18
+ANDI R18, 0x0F
+
+ADD R18, R17
+ORI R18, 0x40
+OUT PORTC, R18
+
+RJMP main_loop
+
+NOP
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+# Keep PDFs, reports, and assignment handouts local.
+*.pdf
+/ARM EXP - 1.txt
+/ARM EXP - 2.txt
+/EE2016 - Microprocessor Theory + Lab.txt
+/EE2016 FPGA Exp  - 4.txt
+/Experiment 2 AVR.docx
+/Experiment 3_ Interrupts in Atmel AVR Atmega through Assembly Programming.txt
+
+# Keep the MQTT experiment out of Git entirely.
+/AVR/Experiment 7 - M2M Communications/
+
+# Keep the AVR tools collection out of this repository.
+/AVR/Tools/
+
+# This local DAC source is intentionally omitted from Git.
+/Verilog and ARM/Experiment 6 - DAC/task_06_square_wave.c
