@@ -2,7 +2,7 @@
 
 Experiment handouts and matching source files for the AVR and FPGA/ARM lab work. Files that were previously spread across `avr experiments`, `verilog experiments`, `asm files`, `verilog files`, and `HLS_files` are now grouped here by experiment number and topic.
 
-Each experiment folder has a short README describing its aim and included files. Extracted program examples are separated by task where useful. PDFs, reports, assignment handouts, the AVR Tools folder, the MQTT Experiment 7 folder, and the ARM DAC square-wave source are kept locally and excluded from Git by this folder's `.gitignore`.
+Each experiment folder has a short README describing its aim and included files. Extracted program examples are separated by task where useful. PDFs, reports, assignment handouts, the AVR Tools folder, and the ARM DAC square-wave source are kept locally and excluded from Git by this folder's `.gitignore`.
 
 ## AVR
 
@@ -11,10 +11,7 @@ Each experiment folder has a short README describing its aim and included files.
 | [Experiment 1 - Assembly Emulation](AVR/Experiment%201%20-%20Assembly%20Emulation/) | AVR assembly emulation handout and an 8-bit addition program. |
 | [Experiment 2 - Peripherals](AVR/Experiment%202%20-%20Peripherals/) | Peripheral wiring and programming handout with a GPIO setup example. |
 | [Experiment 3 - Interrupts](AVR/Experiment%203%20-%20Interrupts/) | Interrupt handout and an external interrupt ISR example. |
-| [Experiment 7 - M2M Communications](AVR/Experiment%207%20-%20M2M%20Communications/) | M2M/MQTT handout, setup scripts, source files, configuration, datasheets, and installer packages. The handout itself identifies this as Experiment 7 even though its original filename included “Exprmnt4.” |
 | Tools | The local AVRLASS assembler/disassembler collection is excluded from this repository. |
-
-The M2M installer scripts use relative paths. Run `install_avr_m2m.sh` from the Experiment 7 folder, and `setup_m2m.sh` from its `m2m` subfolder, so the installer files remain discoverable where expected.
 
 ## Verilog and ARM
 
